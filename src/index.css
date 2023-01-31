@@ -9,3 +9,107 @@
   font-family: "Cosi Azure";
   src: url(./assets/fonts/CosiAzure-Bold.ttf);
 }
+
+:root {
+  --color-dark: #050505;
+  --color-light: #f7f7f7;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: "Michroma", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+.app {
+  position: relative;
+}
+.hero {
+  position: relative;
+}
+.hero-img {
+  height: 450px;
+  width: 450px;
+  overflow: hidden;
+}
+.shutter {
+  position: absolute;
+  z-index: 100;
+  font-family: "Cosi Azure", sans-serif;
+  font-size: 9rem;
+}
+.shutter-left {
+  top: 0;
+  left: 0;
+}
+.shutter-right {
+  bottom: 0;
+  right: 0;
+}
+.noise {
+  background-image: url("./assets/images/noise.gif");
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -9999;
+  opacity: 0.07;
+}
+.circle-left,
+.circle-right {
+  height: 800px;
+  width: 800px;
+  border: 1px dashed var(--color-light);
+  border-radius: 50%;
+  opacity: 0.3;
+  position: fixed;
+  z-index: -9998;
+  animation: spin 90s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.circle-left {
+  top: -40%;
+  left: -20%;
+}
+.circle-right {
+  bottom: -40%;
+  right: -20%;
+}
+
+.link-item {
+  position: relative;
+}
+
+.link-item::after {
+  content: "";
+  background-color: var(--color-light);
+  position: absolute;
+  height: 1px;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.link-item:hover:after {
+  width: 100%;
+}
