@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="about container mx-auto mt-40" id="about">
       <SectionTitle title={"About"} />
-      <div className="about-wrapper mt-40 grid grid-cols-2 gap-20 overflow-hidden">
+      <div className="about-wrapper mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20 overflow-hidden">
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right">
           <p>

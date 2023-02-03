@@ -16,7 +16,10 @@ const Contact = () => {
     <div className="contact container mx-auto mt-40" id="contact">
       <SectionTitle title={"LET'S TALK"} />
 
-      <form onSubmit={sendEmail} className="mt-40 grid grid-cols-2 gap-20">
+      <form
+        onSubmit={sendEmail}
+        className="mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20"
+      >
         <div className="from-control overflow-hidden">
           <input
             type="text"

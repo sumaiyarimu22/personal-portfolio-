@@ -4,8 +4,8 @@ const Project = ({ project }) => {
   const projectRightRef = useRef(null);
   useHoverEffect(projectRightRef, project.img1, project.img2);
   return (
-    <div className="project grid grid-cols-5">
-      <div className="project-left col-span-3 flex flex-col gap-10">
+    <div className="project grid grid-cols-1 xl:grid-cols-5 gap-20">
+      <div className="project-left xl:col-span-3 flex flex-col gap-10">
         <span className="text-9xl text-white/20">
           {String(project.id).padStart(2, 0)}
         </span>
@@ -48,7 +48,7 @@ const Project = ({ project }) => {
         </div>
       </div>
       <div
-        className="project-right col-span-2 justify-self-end"
+        className="project-right xl:col-span-2 xl:justify-self-end row-start-1 xl:row-auto"
         ref={projectRightRef}
       ></div>
     </div>

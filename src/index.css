@@ -155,3 +155,44 @@ input[type="submit"] {
   letter-spacing: inherit;
   word-spacing: inherit;
 }
+
+@media screen and (max-width: 768px) {
+  .hero::before,
+  .hero::after {
+    font-size: 8rem;
+  }
+
+  .section-title {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero::before,
+  .hero::after {
+    font-size: 6rem;
+  }
+
+  .section-title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+
+  .hero::before,
+  .hero::after {
+    font-size: 5rem;
+  }
+
+  .section-title {
+    font-size: 5rem;
+  }
+}
