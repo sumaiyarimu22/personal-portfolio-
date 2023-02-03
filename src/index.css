@@ -151,3 +151,7 @@ body {
 .skill-name {
   font-size: 2rem;
 }
+input[type="submit"] {
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
