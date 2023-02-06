@@ -1,7 +1,11 @@
 import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import { useContactReveal } from "../Hooks/gsap";
+import emialjs from "@emailjs/browser";
+
 const Contact = () => {
+  const formRef = useRef();
+
   const fromControl1Ref = useRef(null);
   const fromControl2Ref = useRef(null);
   const fromControl3Ref = useRef(null);
@@ -13,14 +17,27 @@ const Contact = () => {
     fromControl3Ref,
     fromControl4Ref,
   ];
-
   useContactReveal(fromControlArray);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     //email integration
-
+    emialjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        formRef.current,
+        process.env.REACT_APP_PUBLIC_ID
+      )
+      .then(
+        () => {
+          console.log("message sent");
+        },
+        () => {
+          console.log("Message not send");
+        }
+      );
     //reset
     e.target.querySelector(".fullname").value = "";
     e.target.querySelector(".email").value = "";
@@ -34,6 +51,7 @@ const Contact = () => {
       <form
         onSubmit={sendEmail}
         className="mt-40 grid grid-cols-1 lg:grid-cols-2 gap-20 overflow-hidden"
+        ref={formRef}
       >
         <div className="from-control overflow-hidden" ref={fromControl1Ref}>
           <input
