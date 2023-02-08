@@ -4,7 +4,7 @@ import { useImageReveal, useHeadlineReveal } from "../Hooks/gsap";
 
 const data = {
   img1: "https://res.cloudinary.com/doo2ywmrb/image/upload/v1675356745/personal-portfolio/me_qhgfz0.jpg",
-  img2: "https://res.cloudinary.com/doo2ywmrb/image/upload/v1675357436/personal-portfolio/IMG_20230202_230203_kxnsac.jpg",
+  img2: "https://res.cloudinary.com/doo2ywmrb/image/upload/v1675708986/personal-portfolio/IMG_20230206_221519_rcssfb.jpg",
 };
 
 const Hero = () => {
