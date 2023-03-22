@@ -241,6 +241,15 @@ input[type="submit"] {
 @media screen and (max-width: 500px) {
   html {
     font-size: 40%;
+    margin: 0 10px;
+  }
+
+  .hero-img,
+  .project-right,
+  .about-left {
+    height: 450px;
+    width: 400px;
+    overflow: hidden;
   }
 
   .hero::before,

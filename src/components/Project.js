@@ -28,12 +28,12 @@ const Project = ({ project }) => {
             <span key={i}>{tool}</span>
           ))}
         </span>
-        <div className="flex gap-10 flex-wrap">
+        <div className="flex gap-7 flex-wrap">
           <a
             href={project.liveLink}
             target="_blank"
             rel="noreferrer"
-            className="uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+            className="uppercase py-8 px-10 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >
             Live Site
           </a>
@@ -41,16 +41,16 @@ const Project = ({ project }) => {
             href={project.frontEndLink}
             target="_blank"
             rel="noreferrer"
-            className="uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+            className="uppercase py-8 px-10 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >
             front-End Code
           </a>
-          {project.backendLink && (
+          {project.backEndLink && (
             <a
-              href={project.backendLink}
+              href={project.backEndLink}
               target="_blank"
               rel="noreferrer"
-              className="uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+              className="uppercase py-8 px-10 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
             >
               back-end Code
             </a>
