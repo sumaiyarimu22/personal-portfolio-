@@ -6,7 +6,7 @@ const Bio = () => {
   return (
     <div className="bio mt-20 container mx-auto overflow-hidden">
       <p ref={bioRef}>
-        I am a Front-End Developer specialized in building responsive web
+        I am a MERN-STACK Developer specialized in building responsive web
         applications using MongoDB, Express, React, and Node. It includes
         examples of my work, demonstrating my ability to design and implement
         scalable, efficient, and maintainable applications.
