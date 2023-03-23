@@ -4,17 +4,22 @@ import { useSkillLineReveal, useSkillTextReveal } from "../Hooks/gsap";
 const data = [
   { id: 1, title: "HTML" },
   { id: 2, title: "CSS" },
-  { id: 3, title: "Bootstrap" },
-  { id: 4, title: "Tailwind CSS" },
-  { id: 5, title: "JavaScript" },
-  { id: 6, title: "REact.js" },
-  { id: 7, title: "React Router" },
-  { id: 8, title: "Redux.js" },
-  { id: 9, title: "Redux Toolkit" },
-  { id: 10, title: "Axios" },
-  { id: 11, title: "GSAP" },
-  { id: 12, title: "Firebase" },
+  { id: 3, title: "SASS" },
+  { id: 4, title: "Bootstrap" },
+  { id: 5, title: "Tailwind CSS" },
+  { id: 6, title: "JavaScript" },
+  { id: 7, title: "REact.js" },
+  { id: 8, title: "React Router" },
+  { id: 9, title: "Redux.js" },
+  { id: 10, title: "Redux Toolkit" },
+  { id: 11, title: "Axios" },
+  { id: 12, title: "GSAP" },
+  { id: 13, title: "Firebase" },
+  { id: 14, title: "Node.js" },
+  { id: 15, title: "Express.js" },
+  { id: 16, title: "MongoDB" },
 ];
+
 const Skills = () => {
   const skillItemRef = useRef([]);
   const skillTextRef = useRef([]);

@@ -22,22 +22,24 @@ const About = () => {
         <div className="about-left" ref={aboutLeftRef}></div>
         <div className="about-right" ref={aboutRightRef}>
           <p>
-            I am a React developer with expertise in Redux and Tailwind CSS, you
-            have a passion for building responsive and user-friendly
-            applications. I am skilled in using React components, state
-            management with Redux, and styling with Tailwind CSS to create
-            dynamic and engaging web pages. I attention to detail and ability to
-            create visually appealing and functional user interfaces has made
-            you a valuable asset on any project.
-          </p>
-          <p className="mt-10">
-            I am dedicated to staying up-to-date with the latest technologies
-            and best practices in the industry and are always seeking to improve
-            your skills. My expertise in building responsive and user-friendly
-            applications has resulted in a portfolio of successful projects,
-            demonstrating your ability to deliver high-quality and impactful
-            results. I am an asset to any team, and I bring my unique skillset
-            and experience to every project.
+            As a MERN stack developer, my personal portfolio showcases my skills
+            and experience in building dynamic web applications using the MERN
+            (MongoDB, Express, React, Node) technology stack. I have experience
+            in developing back-end APIs, utilizing MongoDB for data storage, and
+            building responsive front-end interfaces using React.
+            <br />
+            In my portfolio, you'll find examples of my work, including projects
+            that demonstrate my ability to design and implement scalable,
+            maintainable, and efficient applications. I also showcase my
+            expertise in developing RESTful APIs using Node.js and Express, as
+            well as my proficiency in working with React, Redux, and other
+            front-end technologies. <br /> I'm passionate about learning new
+            technologies and staying up-to-date with the latest trends in the
+            industry. In my portfolio, you'll see evidence of my commitment to
+            continuous learning and growth as a developer. <br /> Overall, my
+            personal portfolio is a reflection of my skills, experience, and
+            passion for building high-quality web applications using the MERN
+            stack.
           </p>
           <a
             href="https://docs.google.com/document/d/1QxSL3GzC0FJMQjPISQvSSD_jr5hM5Txlu9cfEBxmXSY/edit"
