@@ -6,12 +6,12 @@ const data = [
     title: "Facebook",
     url: "https://www.facebook.com/sumaiya.rimu.313",
   },
-  { id: 2, title: "Twitter", url: "https://twitter.com/SumaiyaRimu1" },
+  { id: 2, title: "Twitter", url: "https://twitter.com/SumaiyRimu" },
   { id: 3, title: "Github", url: "https://github.com/sumaiyarimu22" },
   {
     id: 4,
     title: "LinkedIn",
-    url: "https://www.linkedin.com/in/sumaiya-rimu-b24712249/",
+    url: "https://www.linkedin.com/in/sumaiya-rimu/",
   },
 ];
 
