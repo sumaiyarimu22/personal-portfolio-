@@ -2,22 +2,17 @@ import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import { useSkillLineReveal, useSkillTextReveal } from "../Hooks/gsap";
 const data = [
-  { id: 1, title: "HTML" },
-  { id: 2, title: "CSS" },
-  { id: 3, title: "SASS" },
-  { id: 4, title: "Bootstrap" },
+  { id: 1, title: "Next.Js" },
+  { id: 2, title: "Mongodb" },
+  { id: 3, title: "Express.js" },
+  { id: 4, title: "React.js" },
   { id: 5, title: "Tailwind CSS" },
-  { id: 6, title: "JavaScript" },
-  { id: 7, title: "REact.js" },
-  { id: 8, title: "React Router" },
-  { id: 9, title: "Redux.js" },
-  { id: 10, title: "Redux Toolkit" },
-  { id: 11, title: "Axios" },
-  { id: 12, title: "GSAP" },
-  { id: 13, title: "Firebase" },
-  { id: 14, title: "Node.js" },
-  { id: 15, title: "Express.js" },
-  { id: 16, title: "MongoDB" },
+  { id: 6, title: "Node.js" },
+  { id: 7, title: "JavaScript" },
+  { id: 8, title: "Redux.js" },
+  { id: 9, title: "Firebase" },
+  { id: 10, title: "HTML" },
+  { id: 11, title: "CSS" },
 ];
 
 const Skills = () => {
@@ -38,7 +33,7 @@ const Skills = () => {
       <div className="skills-wrapper grid grid-cols-1 sm:grid-cols-2 sm:gap-20 mt-40 gap-10">
         <ul className="skills-left flex flex-col gap-10">
           {data
-            .filter((_, i) => i < Math.floor(data.length / 2))
+            .filter((_, i) => i <= Math.floor(data.length / 2))
             .map((skill, i) => (
               <li
                 key={skill.id}
@@ -59,7 +54,7 @@ const Skills = () => {
         </ul>
         <ul className="skills-right flex flex-col gap-10">
           {data
-            .filter((_, i) => i >= Math.floor(data.length / 2))
+            .filter((_, i) => i > Math.floor(data.length / 2))
             .map((skill, i) => (
               <li
                 key={skill.id}
