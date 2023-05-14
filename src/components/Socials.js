@@ -20,7 +20,7 @@ const Socials = () => {
   useSocialReveal(SocialReveal, 1.5);
   return (
     <div
-      className="socials flex gap-5 uppercase text-sm fixed left-5 top-[85%] -rotate-90 origin-left text-white/50 bg-black/30 p-5 backdrop:blur-xl z-50"
+      className="socials flex gap-5 uppercase text-sm fixed left-5 top-[85%] -rotate-90 origin-left text-gray-400 bg-black p-5 backdrop:blur-xl z-50"
       ref={SocialReveal}
     >
       {data.map((social) => (

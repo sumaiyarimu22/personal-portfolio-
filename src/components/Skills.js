@@ -44,7 +44,7 @@ const Skills = () => {
                   className="flex gap-10 items-baseline"
                   ref={(el) => (skillTextRef.current[i] = el)}
                 >
-                  <span className="skill-number text-white/50">
+                  <span className="skill-number">
                     {String(skill.id).padStart(2, 0).padEnd(3, ".")}
                   </span>
                   <span className="skill-name">{skill.title}</span>
@@ -65,7 +65,7 @@ const Skills = () => {
                   className="flex gap-10 items-baseline"
                   ref={(el) => (skillText2Ref.current[i] = el)}
                 >
-                  <span className="skill-number text-white/50">
+                  <span className="skill-number">
                     {String(skill.id).padStart(2, 0).padEnd(3, ".")}
                   </span>
                   <span className="skill-name">{skill.title}</span>

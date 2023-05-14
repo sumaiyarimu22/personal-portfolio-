@@ -45,7 +45,7 @@ const About = () => {
             href="https://docs.google.com/document/d/1QxSL3GzC0FJMQjPISQvSSD_jr5hM5Txlu9cfEBxmXSY/edit"
             target="_blank"
             rel="noreferrer"
-            className="inline-block mt-10 uppercase py-8 px-14 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+            className="inline-block mt-10 uppercase py-8 px-14 border border-black rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >
             Resume
           </a>

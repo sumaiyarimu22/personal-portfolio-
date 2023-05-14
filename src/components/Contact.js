@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import SectionTitle from "./SectionTitle";
 import { useContactReveal } from "../Hooks/gsap";
-import emialjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const formRef = useRef();
@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     //email integration
-    emialjs
+    emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
@@ -59,7 +59,7 @@ const Contact = () => {
             placeholder="Write your name"
             name="fullname"
             required
-            className="fullname bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 w-full"
+            className="fullname bg-transparent border py-16 px-28 rounded-full border-black outline-none focus:border-cyan-400 duration-500 w-full"
           />
         </div>
         <div className="from-control overflow-hidden" ref={fromControl2Ref}>
@@ -68,7 +68,7 @@ const Contact = () => {
             placeholder="Write your email"
             name="email"
             required
-            className="email bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 w-full"
+            className="email bg-transparent border py-16 px-28 rounded-full border-black outline-none focus:border-cyan-400 duration-500 w-full"
           />
         </div>
         <div className="from-control overflow-hidden" ref={fromControl3Ref}>
@@ -76,7 +76,7 @@ const Contact = () => {
             placeholder="Write your message"
             name="message"
             required
-            className="message bg-transparent border py-16 px-28 rounded-full border-white/20 outline-none focus:border-cyan-400 duration-500 w-full resize-none"
+            className="message bg-transparent border py-16 px-28 rounded-full border-black outline-none focus:border-cyan-400 duration-500 w-full resize-none"
             rows="1"
             cols="30"
           />
@@ -85,7 +85,7 @@ const Contact = () => {
           <input
             type="submit"
             value="Send message"
-            className="border py-16 px-28 rounded-full border-white/20 outline-none hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500 w-full uppercase cursor-pointer"
+            className="border py-16 px-28 rounded-full border-black outline-none hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500 w-full uppercase cursor-pointer"
           />
         </div>
       </form>

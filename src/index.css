@@ -11,8 +11,8 @@
 }
 
 :root {
-  --color-dark: #050505;
-  --color-light: #f7f7f7;
+  --color-dark: #f7f7f7;
+  --color-light: #050505;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -190,7 +190,7 @@ input[type="submit"] {
   border-radius: 50%;
   background-color: var(--color-light);
   transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   pointer-events: none;
   transition: width 0.5s, height 0.5s;
 }
@@ -207,7 +207,7 @@ input[type="submit"] {
   z-index: 9999;
   position: fixed;
   transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   pointer-events: none;
   border: 1px solid var(--color-light);
   transition: 0.1s;

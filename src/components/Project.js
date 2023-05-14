@@ -33,7 +33,7 @@ const Project = ({ project }) => {
             href={project.liveLink}
             target="_blank"
             rel="noreferrer"
-            className="uppercase py-8 px-10 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+            className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >
             Live Site
           </a>
@@ -41,7 +41,7 @@ const Project = ({ project }) => {
             href={project.frontEndLink}
             target="_blank"
             rel="noreferrer"
-            className="uppercase py-8 px-10 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+            className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
           >
             front-End Code
           </a>
@@ -50,7 +50,7 @@ const Project = ({ project }) => {
               href={project.backEndLink}
               target="_blank"
               rel="noreferrer"
-              className="uppercase py-8 px-10 border border-white/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+              className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
             >
               back-end Code
             </a>
