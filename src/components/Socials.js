@@ -13,6 +13,11 @@ const data = [
     title: "LinkedIn",
     url: "https://www.linkedin.com/in/sumaiya-rimu/",
   },
+  {
+    id: 5,
+    title: "Leetcode",
+    url: "https://leetcode.com/sumaiyaRimu/",
+  },
 ];
 
 const Socials = () => {
