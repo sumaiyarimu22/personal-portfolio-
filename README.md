@@ -26,4 +26,4 @@ This project is a personal portfolio website to showcase my skills and projects.
 ## Conclusion
 This personal portfolio website is a great starting point for anyone looking to create an online presence for themselves or their business. With its clean design, fast load times, and optimized for modern web standards, it is the perfect platform for showcasing your skills and projects.
 
-Note: This is a front-end only implementation.
+
