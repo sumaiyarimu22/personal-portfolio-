@@ -19,11 +19,11 @@ const Project = ({ project }) => {
         <span className="text-9xl text-white/20">
           {String(project.id).padStart(2, 0)}
         </span>
-        <h3 className="uppercase text-5xl leading-relaxed text-cyan-400">
+        <h3 className="uppercase text-5xl leading-relaxed text-black">
           {project.title}
         </h3>
         <p>{project.description}</p>
-        <span className="text-cyan-400 flex gap-5 flex-wrap">
+        <span className=" text-cyan-400 flex gap-5 flex-wrap">
           {project.tools.map((tool, i) => (
             <span key={i}>{tool}</span>
           ))}
@@ -33,7 +33,7 @@ const Project = ({ project }) => {
             href={project.liveLink}
             target="_blank"
             rel="noreferrer"
-            className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+            className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-black/20 hover:border-black/20 duration-500"
           >
             Live Site
           </a>
@@ -41,7 +41,7 @@ const Project = ({ project }) => {
             href={project.frontEndLink}
             target="_blank"
             rel="noreferrer"
-            className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+            className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-black/20 hover:border-black/20 duration-500"
           >
             front-End Code
           </a>
@@ -50,7 +50,7 @@ const Project = ({ project }) => {
               href={project.backEndLink}
               target="_blank"
               rel="noreferrer"
-              className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-cyan-400/20 hover:border-cyan-400/20 duration-500"
+              className="uppercase py-8 px-10 border border-black/20 rounded-full hover:bg-black/20 hover:border-black/20 duration-500"
             >
               back-end Code
             </a>
